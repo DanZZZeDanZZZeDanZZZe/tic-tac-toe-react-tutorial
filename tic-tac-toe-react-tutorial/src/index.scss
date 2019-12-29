@@ -1,3 +1,5 @@
+$borderColor: #999; 
+$squareColor: #fff;
 body {
   font: 14px "Century Gothic", Futura, sans-serif;
   margin: 20px;
@@ -11,6 +13,7 @@ ol, ul {
   clear: both;
   content: "";
   display: table;
+  
 }
 
 .status {
@@ -18,8 +21,8 @@ ol, ul {
 }
 
 .square {
-  background: #fff;
-  border: 1px solid #999;
+  background: $squareColor;
+  border: 1px solid $borderColor;
   float: left;
   font-size: 24px;
   font-weight: bold;
@@ -30,10 +33,9 @@ ol, ul {
   padding: 0;
   text-align: center;
   width: 34px;
-}
-
-.square:focus {
-  outline: none;
+  &:focus {
+    outline: none;
+  }
 }
 
 .kbd-navigation .square:focus {
